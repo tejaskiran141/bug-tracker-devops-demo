@@ -16,7 +16,7 @@ def save_bugs(bugs):
 
 @app.route("/")
 def home():
-    return "Bug Tracker API Running"
+    return "Bug Tracker DevOps Demo Running"
 
 @app.route("/bugs", methods=["GET"])
 def get_bugs():
@@ -52,4 +52,5 @@ def resolve_bug(bug_id):
     return jsonify({"message": "Bug resolved"})
 
 if __name__ == "__main__":
+
     app.run(debug=True)
